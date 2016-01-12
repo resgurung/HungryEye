@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:elevation="7dp"
+    android:fitsSystemWindows="true">
+    <!--
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.robin.hungryeye.MainActivity">
+    -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+        <include android:id="@+id/tool_bar"
+            layout="@layout/tool_bar">
+        </include>
+
+
+       <include android:id="@+id/tab_layout"
+           layout="@layout/tablayout">
+       </include>
+
+
+       <!-- get the partition on the tab -->
+       <android.support.v4.view.ViewPager
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/pager"
+           android:layout_below="@+id/tab_layout"
+           />
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="@string/app_name"/>
+
+
+
+    </LinearLayout>
+    <!--log out button implement -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_delete" />
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/recyclerView"
+       android:layout_width="300dp"
+       android:layout_height="match_parent"
+       android:layout_gravity="left"
+       android:background="#ffffff"
+       android:scrollbars="vertical">
+
+   </android.support.v7.widget.RecyclerView>
+
+</android.support.v4.widget.DrawerLayout>

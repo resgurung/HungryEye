@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- color for android toolbar, tab and other components -->
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#B71C1C</color>
+    <color name="colorAccent">#FFE082</color>
+
+    <!-- color for listview bg clicked and unclicked  -->
+    <color name="click_end_color_bg">#cccccc</color>
+    <color name="click_start_color_bg">#ffffff</color>
+
+</resources>

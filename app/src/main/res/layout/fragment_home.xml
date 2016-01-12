@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.robin.hungryeye.frag.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+<!--
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingBottom="1dp"
+        android:paddingTop="1dp"
+    />-->
+
+
+ <ImageView
+     android:layout_width="match_parent"
+     android:layout_height="320dp"
+     android:id="@+id/image_view1"
+     android:src="@drawable/kitchen1"
+     android:scaleType="fitXY"
+     android:layout_margin="15dp"
+     />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We are a small company who are committed to creating great home cooked food for a fair price."
+        android:id="@+id/resturent"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/image_view1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:padding="10dp"
+        android:id="@+id/dcf"
+        android:text="10% discount when you sign up!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/image_view1"
+        android:layout_centerHorizontal="true"
+       />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paypal"
+        android:layout_weight="1"
+        android:src="@drawable/pplogo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/resturent"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/image_view1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/social"
+        android:layout_weight="3"
+        android:padding="10dp"
+        android:background="#D5D6D2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/paypal">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:id="@+id/facebook"
+            android:src="@drawable/facebook"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:id="@+id/twitter"
+            android:src="@drawable/twitter"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:id="@+id/instagram"
+            android:src="@drawable/instagram"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
